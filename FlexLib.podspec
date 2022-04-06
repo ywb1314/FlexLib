@@ -36,6 +36,8 @@ It's a layout framework based on yoga engine. The main purpose is to provide eas
     }
   
     ss.dependency 'Yoga', '1.14.0'
+    ss.dependency 'YogaKit', '1.18.1'
+    
     ss.library = 'xml2', 'c++'
     ss.xcconfig = { 'HEADER_SEARCH_PATHS' => '/usr/include/libxml2' }
     #s.private_header_files = 'FlexLib/Classes/private/*.h'
@@ -57,4 +59,5 @@ It's a layout framework based on yoga engine. The main purpose is to provide eas
   
     ss.dependency 'FlexLib/standard'
   end
+
 end
