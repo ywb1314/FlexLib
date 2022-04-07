@@ -16,6 +16,7 @@
 #import "ViewExt/UIView+Flex.h"
 #import "FlexUtils.h"
 #import "FlexStyleMgr.h"
+#import "YGLayout+FlexBox.h"
 
 static void* gObserverHidden    = &gObserverHidden;
 static void* gObserverText = &gObserverText;
@@ -500,7 +501,7 @@ static NSInteger _compareInputView(UIView * _Nonnull f,
     }
     
     [self enableFlexLayout:YES];
-    [self.yoga applyLayoutPreservingOrigin:NO dimensionFlexibility:option];
+    [self.yoga applyFlexLayoutPreservingOrigin:NO dimensionFlexibility:option];
     [self enableFlexLayout:NO];
     
     // 布局后事件
